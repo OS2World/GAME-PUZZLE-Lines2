@@ -1,0 +1,69 @@
+ICON 200 Lines2.Ico
+
+BITMAP 201 Blue.Bmp
+BITMAP 202 Green.Bmp
+BITMAP 203 Red.Bmp
+BITMAP 204 Magenta.Bmp
+BITMAP 205 Broun.Bmp
+BITMAP 206 Yellow.Bmp
+BITMAP 207 White.Bmp
+
+BITMAP 208 Blue-Min.Bmp
+BITMAP 209 Green-Min.Bmp
+BITMAP 210 Red-Min.Bmp
+BITMAP 211 Magenta-Min.Bmp
+BITMAP 212 Broun-Min.Bmp
+BITMAP 213 Yellow-Min.Bmp
+BITMAP 214 White-Min.Bmp
+
+BITMAP 215 Blue-Dstr-1.Bmp
+BITMAP 216 Green-Dstr-1.Bmp
+BITMAP 217 Red-Dstr-1.Bmp
+BITMAP 218 Magenta-Dstr-1.Bmp
+BITMAP 219 Broun-Dstr-1.Bmp
+BITMAP 220 Yellow-Dstr-1.Bmp
+BITMAP 221 White-Dstr-1.Bmp
+
+BITMAP 222 Blue-Dstr-2.Bmp
+BITMAP 223 Green-Dstr-2.Bmp
+BITMAP 224 Red-Dstr-2.Bmp
+BITMAP 225 Magenta-Dstr-2.Bmp
+BITMAP 226 Broun-Dstr-2.Bmp
+BITMAP 227 Yellow-Dstr-2.Bmp
+BITMAP 228 White-Dstr-2.Bmp
+
+BITMAP 231 ToLeft-Right.Bmp
+BITMAP 232 ToLeft-Up.Bmp
+BITMAP 233 ToLeft-Down.Bmp
+BITMAP 234 ToRight-Left.Bmp
+BITMAP 236 ToRight-Up.Bmp
+BITMAP 237 ToRight-Down.Bmp
+BITMAP 238 ToUp-Left.Bmp
+BITMAP 239 ToUp-Right.Bmp
+BITMAP 241 ToUp-Down.Bmp
+BITMAP 242 ToDown-Left.Bmp
+BITMAP 243 ToDown-Right.Bmp
+BITMAP 244 ToDown-Up.Bmp
+
+#include "\vp\source\owl\pm.h"
+
+DLGTEMPLATE 270
+BEGIN
+     DIALOG "About",270,13,44,169,68,FS_DLGBORDER|WS_VISIBLE,FCF_TITLEBAR|FCF_SYSMENU
+     BEGIN
+          ICON "#200",271,24,40,21,16,WS_VISIBLE
+          CTEXT "Lines/2",272,65,52,40,10,WS_VISIBLE|DT_VCENTER
+          CTEXT "Version 1.04",273,51,39,67,10,WS_VISIBLE|DT_VCENTER
+          CTEXT "Eugeny Rubtsov, 2:5058/4 Fidonet",274,7,24,154,10,WS_VISIBLE|DT_VCENTER
+          PUSHBUTTON "Ok",275,65,6,40,15,WS_VISIBLE|BS_DEFAULT
+     END
+END
+
+MENU 280
+BEGIN
+ MENUITEM "Start", 281
+ MENUITEM "",       282, MIS_SEPARATOR
+ MENUITEM "Path",   283 
+ MENUITEM "Next Colors", 284
+ MENUITEM "Sound" ,  285
+END
